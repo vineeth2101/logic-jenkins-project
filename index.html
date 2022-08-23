@@ -1,79 +1,186 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<title> 
-Example of Submit Disabled 
-</title> 
-<style> 
-/* The following tag selector body use the font-family and background-color properties for body of a page*/ 
-  
-body { 
-font-family: Calibri, Helvetica, sans-serif; 
-background-color: pink; 
-} 
-/* Following container class used padding for generate space around it, and also use a background-color for specify the color lightblue as a background */   
-.container { 
-padding: 50px; 
-background-color: lightblue; 
-} 
-/* The following tag selector input uses the different properties for the text filed. */ 
-  
-input[type=text] { 
-  width: 100%; 
-  padding: 15px; 
-margin: 5px 0 22px 0; 
-display: inline-block; 
- border: none; 
- background: #F1F1F1; 
-} 
-input[type=text]:focus { 
-background-color: orange; 
-outline: none; 
-} 
- div { 
-            padding: 10px 0; 
-        } 
-/* The following tag selector button uses the different properties for the Button. */ 
-  
-button { 
-  color: red; 
-  padding: 16px 20px;   
-  margin: 8px 0; 
-  border: none; 
-  cursor: pointer; 
-  width: 100%; 
-  
-  opacity: 0.9; 
-} 
-</style> 
-</head> 
-<body> 
-<form> 
-<div class="container"> 
-<center>   
-<h1> Registration Form </h1>  
-</center> 
-<label> Firstname: </label>  
-<input type="text" name="firstname" placeholder= "Enter your Firstname" size="15" required />  
-<label> Middlename: </label>  
-<input type="text" name="middlename" placeholder="Enter your Middlename" size="15" />  
-<label> Lastname: </label>   
-<input type="text" name="lastname" placeholder="Enter your Lastname" size="15"required />  
-<div> 
-<label>  
-Gender : 
-</label><br> 
-<input type="radio" value="Male" name="gender" checked > Male  
-<input type="radio" value="Female" name="gender"> Female  
-<input type="radio" value="Other" name="gender"> Other 
-</div> 
-<label for="email"> Email: <label> 
-<input type="text" placeholder="Enter Your Email ID" name="email" required> 
-  
-In this example, the disabled attribute is used to disable the Submit button. If you click on the "Submit Form" button, without filling the values, then it will not show the constraints included.  
-  
-<button type="submit" value="submit" disabled> Submit Form </button> 
-</form> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Template | Home</title> 
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c3e053901.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+
+<div class="wrapper">
+
+
+    <div class="top">
+        <div class="red"></div>
+        <div class="purple"></div>
+        <div class="green"></div>
+    </div>
+
+    <nav class="nav-scrolled">
+        <div class="logo">
+            <h4><img src="./img/logo-black.png" alt=""></h4>
+        </div>
+        <input type="checkbox" name="" class="nav-toggle" id="nav-toggle">
+        
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#clients">CLIENTS</a></li>
+            <li><a href="#blogs">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="ham" for="nav-toggle">
+            <label for="nav-toggle"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+    <div class="title-section">
+        <div class="content">
+            <h1 class="title-name">CREATIVE <br> DIGITAL AGENCY</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium adipisci architecto iste 
+                magni commodi tempora molestias inventore optio voluptatem ducimus, deleniti itaque necessitatibus ea maiores.</p>
+            <button class="btn">Learn More</button>
+        </div>
+        <img class="title-sec-img" src="./img/img1.jpg" alt="">
+    </div>
+
+<div class="div">
+    <div class="overlay-2"></div>
+    <div class="about-section" id="about">
+        <div class="icons">
+            <div class="div"><i class="fas fa-briefcase fa-6x"></i>
+                <label for="">Make Business</label>
+            </div>
+            <div class="div"><i class="far fa-lightbulb fa-6x"></i>
+                <label for="">Agency Ideas</label>
+            </div>
+            <div class="div"><i class="far fa-heart fa-6x"></i>
+                <label for="">Our Hardwork</label>
+            </div>
+            <div class="div"><i class="fas fa-wallet fa-6x"></i>
+                <label for="">Make Money</label>
+            </div>
+            
+        </div>
+        <div class="content">
+            <h1 class="title-name">WE ARE <br> DIGITAL AGENCY</h1>
+            <p> Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy. Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.</p>
+
+                <p> Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy. </P>
+            <button class="btn">Learn More</button>
+        </div>
+    </div>
+</div>
+
+
+    <div class="stats" id="clients">
+        <div class="data">
+            <span><p>Lorem ipsum dolor sit amet consectetur.</p></span>
+            <h1>AGENCY STATS & FACTS</h1>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy. Lorem ipsum is simply dummy text of the printing and typesetting. </p>
+        </div>
+        <div class="circles">
+            <div class="box">
+                <img src="./img/1.png" alt="">
+                <label for="">257%</label>
+                <p>Increase in Sales <br> year on year</p>
+            </div>
+            <div class="box">
+                <img src="./img/2.png" alt="">
+                <label for="">96%</label>
+                <p>Recommendation rate <br> over the year</p>
+            </div>
+            <div class="box">
+                <img src="./img/3.png" alt="">
+                <label for="">317%</label>
+                <p>New ventures we <br> became part of</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="team">
+        <div class="overlay-3"></div>
+        <div class="team-content">
+            <div class="data2">
+                <h1>WE HAVE <br> AMAZING TEAM</h1>
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. </p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="portfolio" id="portfolio"> 
+        <div class="left">
+            <div class="head">
+                <h1>OUR <br> AMAZING PORTFOLIO</h1>
+            </div>
+            <div class="image">
+                <img src="./img/p1.jpg" alt="">
+                <div class="overlay-4"><span>+</span></div>
+            </div>
+            <div class="image">
+                <img src="./img/p3.jpg" alt="">
+                <div class="overlay-4"><span>+</span></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="image">
+                <img src="./img/p2.jpg" alt="">
+                <div class="overlay-4"><span>+</span></div>
+            </div>
+            <div class="image">
+                <img src="./img/p4.jpg" alt="">
+                <div class="overlay-4"><span>+</span></div>
+            </div>
+            <div class="tail">
+                <div class="text">
+                    <label for="">
+                        We have completed more than
+                    </label>
+                    <h1>530</h1>
+                    <label for="">
+                        Projects for our amazing clients
+                    </label>
+                </div>
+                <button>VIEW ALL</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="div">
+        <div class="overlay-5"></div>
+        <div class="testimonials" id="">
+            <div class="test-left">
+                <h1>Satisfied <br> Customers</h1>
+                <p>  Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. </p>
+                
+            </div>
+            <div class="test-right">
+                <i class="fas fa-quote-right fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus.</p>
+                <img src="./img/test2.jpg" alt="">
+                <label for="">Julia Miltesa </label>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
